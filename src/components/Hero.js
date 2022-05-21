@@ -10,11 +10,6 @@ function Hero() {
     <div className='hero-container'>
         <video src="/videos/video-1.mp4" autoPlay loop muted />
         <h1>Portfolio of Matthew Gurski</h1>
-        <p>Hey Check it out!</p>
-        <div className='hero-btns'>
-            <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>Click <FontAwesomeIcon icon={fa1}/></Button>
-            <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>Click <FontAwesomeIcon icon={fa2}/></Button>
-        </div>
     </div>
   );
 }

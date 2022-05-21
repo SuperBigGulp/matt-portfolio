@@ -1,0 +1,66 @@
+  .about {
+    padding: 2rem;
+    background: #fff;
+    flex-flow: column;
+  }
+
+  h1 {
+    text-align: left;
+    color: #000;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+
+  p {
+    font-size: 24px;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+
+  .about__container {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    max-width: 1120px;
+    width: 100%;
+    margin: 100px 50px 20px 0;
+    column-gap: 100px;
+  }
+
+  .portrait__item {
+    margin-bottom: 24px;
+  }
+
+  .portrait__pic-wrap {
+    position: absolute;
+    width: 20px;
+    overflow: hidden;
+  }
+ 
+  .portrait__img {
+    height: 30vh;
+    overflow: hidden;
+    border-radius: 280px;
+  }
+
+
+  @media only screen and (min-width: 1200px) {
+    .about__container {
+      width: 84%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .portrait__item {
+      display: flex;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .portrait__item {
+      margin-bottom: 2rem;
+    }
+  }
