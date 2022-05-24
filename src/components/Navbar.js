@@ -1,4 +1,4 @@
-import React, {useState, useEffect, Component} from 'react';
+import React, { Component } from 'react';
 import { Link, animateScroll as scroll} from 'react-scroll';
 import '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
@@ -13,14 +13,14 @@ export default class Navbar extends Component {
   render() {
     return (
       <>
-        <nav className='navbar'>
+        <nav className='navbar_custom'>
             <div className='navbar-container'>
               <Link onClick={this.scrollToTop} className='navbar-logo'>
                 Matthew Gurski
               </Link>
 
               <ul className='nav-menu'>
-                <li className='nav-item'>
+                <li className='nav-item_custom'>
                   <Link  
                     className='nav-links'
                     activeClass="active"
@@ -33,7 +33,7 @@ export default class Navbar extends Component {
                     About Me
                   </Link>
                 </li>
-                <li className='nav-item'>
+                <li className='nav-item_custom'>
                   <Link 
                   className='nav-links'
                   to="cards"

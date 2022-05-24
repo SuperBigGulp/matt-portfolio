@@ -1,6 +1,7 @@
 .cards {
     padding: 4rem;
-    background: #fff;
+    background: rgb(255, 255, 255);
+    background-size: contain;
   }
   
   h1 {
