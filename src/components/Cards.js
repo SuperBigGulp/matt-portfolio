@@ -1,62 +1,84 @@
 import React from 'react';
 import CardItem from './CardItem';
 import './Cards.css';
-import { Modal, Button, ModalBody, ModalHeader, ModalTitle, ModalFooter } from 'react-bootstrap';
-import './Modal.css';
+import ModalProject from './ModalProject';
 
 
-
-function MyVerticallyCenteredModal(props) {
-    return (
-      <Modal
-        {...props}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <ModalHeader closeButton>
-          <ModalTitle id="contained-modal-title-vcenter">
-            Modal heading
-          </ModalTitle>
-        </ModalHeader>
-        <ModalBody>
-          <h4>Centered Modal</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
-          </p>
-        </ModalBody>
-        <ModalFooter>
-          <Button onClick={props.onHide}>Close</Button>
-        </ModalFooter>
-      </Modal>
-    );
-}
 
 function Cards() {
 
-    const [modalShow, setModalShow] = React.useState(false);
+  const [modalShow1, setModalShow1] = React.useState(false);
+  const [modalShow2, setModalShow2] = React.useState(false);
+  const [modalShow3, setModalShow3] = React.useState(false);
+  const [modalShow4, setModalShow4] = React.useState(false);
+  const [modalShow5, setModalShow5] = React.useState(false);
 
   return (
     <>
-        <div className='cards'>
-            <h1>Projects!</h1>
-            <div className='cards__container'>
-                <div className='cards__wrapper'>
-                    <ul className='cards__items'>
-                        <CardItem onClick={() => setModalShow(true)} src='images/img-1.jpg' text='project 1 the quick brown fox' path='/'/>
-                        <CardItem src='images/img-2.jpg' text='project 2 the quick brown fox' path='/'/>
-                    </ul>
-                    <ul className='cards__items'>
-                        <CardItem src='images/img-3.jpg' text='project 3 the quick brown fox' path='/'/>
-                    
-                        <CardItem src='images/img-1.jpg' text='project 4 the quick brown fox' path='/'/>
-                    </ul>
-                </div>
-            </div>
+      <div className='cards'>
+        <h1>Projects!</h1>
+        <div className='cards__container'>
+          <div className='cards__wrapper'>
+            <ul className='cards__items'>
+              <CardItem onClick={() => setModalShow1(true)} src='images/Entangled.png' text='Entangled' path='/'/>
+              <ModalProject 
+                show={modalShow1} 
+                onHide={() => setModalShow1(false)}
+                title='Entangled'
+                src='images/Entangled.png'
+                body='With a team of 8 other students, I helped design and developed a
+                short puzzle platforming game. My role on the team consisted of
+                programmer, game/level designer, and tester. Using unity, GitHub,
+                and Trello; I and my teammates worked hard over the course of a
+                term and ended up winning the students choice award for the best
+                game. We have a steam release coming in May!'
+                >
+                </ModalProject>
+              <CardItem onClick={() => setModalShow2(true)} src='images/Saskcycle.png' text='Saskcycle' path='/'/>
+              <ModalProject 
+                show={modalShow2} 
+                onHide={() => setModalShow2(false)}
+                title='Project 2'
+                src='images/Saskcycle.png'
+                body='With a team of 4 other students, I helped design and develop a web
+                app called SaskCycle that aimed to help assist in various methods of
+                recycling. The project was built in java and utilized the Spring
+                framework, Vaadin GUI, MongoDB, and the Google Maps API.'
+                ></ModalProject>
+            </ul>  
+            <ul className='cards__items'>
+                <CardItem onClick={() => setModalShow3(true)} src='images/DarkestDepths.png' text='Darkest Depths' path='/'/>
+                <ModalProject 
+                  show={modalShow3} 
+                  onHide={() => setModalShow3(false)}
+                  title='Darkest Depths'
+                  src='images/DarkestDepths.png'
+                  body='A simple unity game developed with three other students for a class in university.'
+                  ></ModalProject>
+                <CardItem onClick={() => setModalShow4(true)} src='images/firebase.png' text='Simple firebase webapp' path='/'/>
+                <ModalProject 
+                  show={modalShow4} 
+                  onHide={() => setModalShow4(false)}
+                  title='Simple firebase webapp'
+                  src='images/firebase.png'
+                  body='In a 2 week sprint, I was tasked with exploring a new web technology
+                  and implementing a simple volunteer service web app. My chosen
+                  technology was ﬁrebase which I used to implement a simple front-
+                  end and backend structure. '
+                  ></ModalProject>
+              <CardItem onClick={() => setModalShow5(true)} src='images/react.png' text='This Website!' path='/'/>
+                <ModalProject 
+                  show={modalShow5} 
+                  onHide={() => setModalShow5(false)}
+                  title='React Portfolio Page!'
+                  src='images/react.png'
+                  body='Built with react, I made this single page portfolio site to better organize and present myself to potential employers like you!
+                  While I learned a little bit of react during my education, this project also served as a learning endevour in furthing my ability with react'
+                  ></ModalProject>
+            </ul>
+          </div>
         </div>
-        <MyVerticallyCenteredModal show={modalShow} onHide={() => setModalShow(false)}></MyVerticallyCenteredModal>
+      </div>
     </>
   )
 }

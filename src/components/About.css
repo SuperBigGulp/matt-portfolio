@@ -1,13 +1,21 @@
   .about {
-    padding: 2rem;
+    padding: 1rem;
     background: #fff;
     flex-flow: column;
+    height: 85vh;
   }
 
   h1 {
     text-align: left;
     color: #000;
     font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  h2 {
+    text-align: left;
+    color: #000;
+    font-size: 24px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
@@ -26,8 +34,19 @@
     align-items: center;
     max-width: 1120px;
     width: 100%;
-    margin: 100px 50px 20px 0;
+    margin: 50px 50px 20px 0;
     column-gap: 100px;
+    margin-bottom: 5%;
+  }
+  .skills__container {
+    position: relative;
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+    max-width: 1120px;
+    width: 100%;
+    column-gap: 15px;
+    row-gap: 5px;
   }
 
   .portrait__item {
@@ -46,6 +65,18 @@
     border-radius: 280px;
   }
 
+  .badge{
+    background-color:#0dcaf0;
+    color:#fff;
+    display:inline-block;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom: 7px;
+    padding-top: 4px;
+    text-align:center;
+    border-radius: 10px;
+    font-size: 16px;
+  }
 
   @media only screen and (min-width: 1200px) {
     .about__container {
