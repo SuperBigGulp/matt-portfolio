@@ -16,7 +16,7 @@ function Cards() {
   return (
     <>
       <div className='cards'>
-        <h1>Projects!</h1>
+        <h1>Projects</h1>
         <div className='cards__container'>
           <div className='cards__wrapper'>
             <ul className='cards__items'>
@@ -24,6 +24,10 @@ function Cards() {
               <ModalProject 
                 show={modalShow1} 
                 onHide={() => setModalShow1(false)}
+                showlive="true"
+                showgit="true"
+                livepath='https://p2-studios.itch.io/entangled'
+                livegit='https://github.com/p2-Studios/Entangled'
                 title='Entangled'
                 src='images/Entangled.png'
                 body='With a team of 8 other students, I helped design and developed a
@@ -34,11 +38,15 @@ function Cards() {
                 game. We have a steam release coming in May!'
                 >
                 </ModalProject>
-              <CardItem onClick={() => setModalShow2(true)} src='images/Saskcycle.png' text='Saskcycle' path='/'/>
+              <CardItem onClick={() => setModalShow2(true)} src='images/Saskcycle.png' text='SaskCycle' path='/'/>
               <ModalProject 
                 show={modalShow2} 
                 onHide={() => setModalShow2(false)}
-                title='Project 2'
+                showlive="true"
+                showgit="true"
+                livepath='https://saskcycle.herokuapp.com/'
+                livegit='https://git.cs.usask.ca/lkp821/saskcycle'
+                title='SaskCycle'
                 src='images/Saskcycle.png'
                 body='With a team of 4 other students, I helped design and develop a web
                 app called SaskCycle that aimed to help assist in various methods of
@@ -51,6 +59,9 @@ function Cards() {
                 <ModalProject 
                   show={modalShow3} 
                   onHide={() => setModalShow3(false)}
+                  showlive="true"
+                  showgit="true"
+                  livegit='https://github.com/teddy2021/CMPT306GROUP12PROJECT'
                   title='Darkest Depths'
                   src='images/DarkestDepths.png'
                   body='A simple unity game developed with three other students for a class in university.'
@@ -59,6 +70,8 @@ function Cards() {
                 <ModalProject 
                   show={modalShow4} 
                   onHide={() => setModalShow4(false)}
+                  showlive="true"
+                  livepath='https://cmpt353-project-be498.web.app/'
                   title='Simple firebase webapp'
                   src='images/firebase.png'
                   body='In a 2 week sprint, I was tasked with exploring a new web technology
@@ -70,6 +83,8 @@ function Cards() {
                 <ModalProject 
                   show={modalShow5} 
                   onHide={() => setModalShow5(false)}
+                  showgit="true"
+                  livegit='https://github.com/SuperBigGulp/matt-portfolio'
                   title='React Portfolio Page!'
                   src='images/react.png'
                   body='Built with react, I made this single page portfolio site to better organize and present myself to potential employers like you!

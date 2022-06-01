@@ -15,7 +15,7 @@ export default class Navbar extends Component {
       <>
         <nav className='navbar_custom'>
             <div className='navbar-container'>
-              <Link onClick={this.scrollToTop} className='navbar-logo'>
+              <Link onClick={this.scrollToTop} to="navbar-container" className='navbar-logo'>
                 Matthew Gurski
               </Link>
 

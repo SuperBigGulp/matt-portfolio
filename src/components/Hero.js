@@ -7,7 +7,6 @@ import { loadFull } from 'tsparticles';
 
 const Hero = () => {
   const particlesInit = async (main) => {
-    console.log(main);
 
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -16,11 +15,12 @@ const Hero = () => {
   };
 
   const particlesLoaded = (container) => {
-    console.log(container);
+    
   };
   return (
     <div className='hero-container'>
-      <h3>Welcome to my Portfolio!</h3>
+      <h3>Hello, I'm Matthew Gurski<br/>
+        Welcome to my Portfolio!</h3>
       <div className='particles-js'>
           <Particles
         id="tsparticles"
@@ -86,8 +86,6 @@ const Hero = () => {
         "detectRetina": true,
         "background": {
             "color": "#ffffff",
-            "image": "",
-            "position": "50% 50%",
             "repeat": "no-repeat",
             "size": "cover"
         }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
   return (
@@ -10,19 +10,15 @@ function Footer() {
         <p className='footer-subscription-heading'>
           Thanks for taking a look!
         </p>
-        <p className='footer-subscription-text'>
-          You can contact me at the following sources:
-        </p>
-      <div class='footer-links'>
-          <div className='footer-link-wrapper'>
-            <div class='footer-link-items'>
-              <h2>Contact Info:</h2>
-              <p className='footer-subscription-text'><FontAwesomeIcon icon={faEnvelope} /> matthewkgurski@gmail.com</p>
-              <div classname='link-contact'><a href='https://www.linkedin.com/in/matthew-gurski/'>LinkedIn <i class="fa fa-linkedin-square"></i></a></div>
-              <br/>
-              <div classname='link-contact'><a href='https://github.com/SuperBigGulp'>GitHub <i class="fa fa-github-square"></i></a></div>
-              <br/>
-            </div>
+      <div className='footer-links'>
+          <div className='footer-link-items'>
+            <h2>You can contact me at the following sources:</h2>
+            <div className='link-contact'><a href = "mailto: matthewkgurski@gmail.com"><FontAwesomeIcon icon={faEnvelope} /> matthewkgurski@gmail.com</a></div>
+            <br/>
+            <div className='link-contact'><a href='https://www.linkedin.com/in/matthew-gurski/'><i className="fa fa-linkedin-square"/> LinkedIn</a></div>
+            <br/>
+            <div className='link-contact'><a href='https://github.com/SuperBigGulp'><i className="fa fa-github-square"/> GitHub </a></div>
+            <br/>
           </div>
         </div>
       </section>

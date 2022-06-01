@@ -1,20 +1,21 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 import React from 'react'
-import { Modal, Button, ModalBody, ModalHeader, ModalTitle, ModalFooter, CloseButton } from 'react-bootstrap';
+import { Modal, Button, ModalBody, ModalHeader, ModalTitle, ModalFooter } from 'react-bootstrap';
 import './Modal.css';
 
 function ModalProject(props) {
+  const showLive = props.showlive;
+  const showGit = props.showgit
   return (
     <div>
         <Modal
             {...props}
             size="lg"
-            aria-labelledby="contained-modal-title-vcenter"
-            centered
         >
             <ModalHeader>
-              <ModalTitle id="contained-modal-title-vcenter">{props.title}</ModalTitle>
+              <br/>
+              <ModalTitle className='modal-title'>{props.title}</ModalTitle>
               <button className='closeBtn' onClick={props.onHide}><FontAwesomeIcon icon={faX} /></button>
             </ModalHeader>
             <ModalBody>
@@ -23,12 +24,13 @@ function ModalProject(props) {
             <figure className='modal__pic-wrap' data-category={props.label}>
               <img src={props.src} alt='Travel' className='modal__img'></img>
             </figure>
-
+            <br/>
             <p>{props.body}</p>
+            <br/>
             </ModalBody>
             <ModalFooter>
-              <Button variant="outline-primary">Live Project</Button>
-              <Button variant="outline-secondary">Repo</Button>
+              {showLive ? <a href={props.livepath} ><Button variant="outline-secondary" >&nbsp;Live Project&nbsp;</Button></a> : ''}
+              {showGit ? <a href={props.livegit} ><Button variant="outline-primary">Git Repository</Button></a> : ''}
             </ModalFooter>
         </Modal>
     </div>
