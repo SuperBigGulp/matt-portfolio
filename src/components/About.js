@@ -11,11 +11,9 @@ function About() {
           <img className='portrait__img' alt='portrait' src='images/portrait.jpg'></img>
         </figure>
         <p>
-        My education has helped me develop a solid foundation for programming principles and practices. Readable code, good
-        documentation, code debugging, and user-focused design are among some of the skills I excel at. I ﬁnd front-end and areas involving
-        human-computer interaction to be the most engaging. However, my skills are ﬂexible and I enjoy and value back-end work too. In 2020,
-        I took a slight break from my degree, but present-day I'm on track to ﬁnishing this year. In the meantime, I'm hoping to start looking for
-        career opportunities early! 
+        &emsp;My name is Matthew Gurski and I’m currently in my fourth year at the University of Saskatchewan. I have been working towards a bachelor of computer science and am on track to finish all my course work in the fall of 2022! My education has helped me develop a solid foundation for programming principles and practices. Readable code, good documentation, debugging, and user-focused design are some of the programming traits I’ve come to value. In regards to specific development areas, I enjoy both front and back-end work. 
+        <br/><br/>
+        &emsp;In my personal time, I enjoy developing and playing video games. Video game development is a passion of mine and I hope to pursue it as a potential career path. Additionally, I enjoy hiking/camping in the summer, watching movies, and drinking tea!
         </p>
       </div>
       <div className='skills__container'>
@@ -26,30 +24,27 @@ function About() {
           <p className='badge'>Python</p>
           <p className='badge'>Java</p>
           <p className='badge'>JavaScript</p>
-          <p className='badge'>HTML</p>
-          <p className='badge'>SQL/NoSQL</p>
-          <p className='badge'>react</p>
-          <p className='badge'>firebase</p>
+          <p className='badge'>HTML &#38; CSS</p>
+          <p className='badge'>SQL &#38; NoSQL</p>
+          <p className='badge'>Node.js</p>
+          <p className='badge'>React</p>
+          <p className='badge'>Firebase</p>
           <p className='badge'>Docker</p>
           <p className='badge'>Source control (Git)</p>
-          <p className='badge'>Linux</p>
-          <p className='badge'>Windows</p>
           <p className='badge'>GUI Design</p>
-          <p className='badge'>debugging/testing</p>
+          <p className='badge'>Debugging &#38; Testing</p>
           <p className='badge'>Unity</p>
           <p className='badge'>Blender</p>
-          <p className='badge'>Algorithms</p>
-          <p className='badge'>HCI</p>
-          <p className='badge'>Basic Stats and Math</p>
         </div>
       </div>
       <div className='skills__container'>
       <h2>Interpersonal Skills:</h2>
         <div className='skills__container'>
-          <p className='badge'>Good communication/team work skills</p>
+          <p className='badge'>Good communication</p>
+          <p className='badge'>Team Player</p>
           <p className='badge'>Quick learner</p>
-          <p className='badge'>Problem Solving</p>
-          <p className='badge'>Practice with agile/sprint methodology</p>
+          <p className='badge'>Problem Solver</p>
+          <p className='badge'>Practice with Agile/Sprint methodology</p>
         </div>
       </div>
       
